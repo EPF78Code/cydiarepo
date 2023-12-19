@@ -11,14 +11,23 @@
     .container h1 img {
       width: 72px;
       height: 72px;
-      border-radius: 20px;  /* Adjust this value for different roundness */
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .container h1 span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 80px; /* Adjust this value for horizontal position */
+      color: #fff;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
 <div class="container d-flex align-items-center">
-  <h1><img src="CydiaIcon.png" class="img-fluid"> EPF78Code</h1>
+  <h1><img src="CydiaIcon.png" class="img-fluid"> <span>EPF78Code</span></h1>
 </div>
 
 <div class="container">
