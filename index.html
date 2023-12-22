@@ -50,6 +50,8 @@
 
 <body>
 
+  <audio id="coinSound" src="./assets/ding.mp3/"></audio>
+
   <div class="container d-flex align-items-center">
     <h1><img src="CydiaIcon.png" class="img-fluid"> EPF78Code</h1>
   </div>
@@ -59,8 +61,8 @@
       <div class="card-body">
         <p><span class="text-primary"><b>EPF78Code Repo</span></b> Welcome!</p>
         <a class="btn btn-sm btn-primary"
-          href="cydia://url/https://cydia.saurik.com/api/share#?source=https://epf78code.github.io/cydiarepo/">Add
-          to Cydia</a>
+          href="cydia://url/https://cydia.saurik.com/api/share#?source=https://epf78code.github.io/cydiarepo/"
+          onclick="playCoinSound()">Add to Cydia</a>
       </div>
     </div>
   </div>
@@ -81,6 +83,13 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function playCoinSound() {
+      var audio = document.getElementById("coinSound");
+      audio.play();
+    }
+  </script>
 
 </body>
 
